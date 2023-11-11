@@ -1,0 +1,70 @@
+<div class="project-page">
+  <app-headersec pageTitle="{{pageTitle}}" url="{{url}}"></app-headersec>
+  <div class="level1" *ngIf="project">
+      <div class="main-img" style="background:url('./assets/{{project.img}}');background-repeat:no-repeat;background-size:150%;background-position:left -150px;"></div>
+      <h2>{{project.title}}</h2>
+  </div>
+  <div class="level2" *ngIf="project">
+      <div class="item">
+          {{project.year}}
+          <ul>
+              <li *ngFor="let s of project.skills">{{s}}</li>
+          </ul>
+          <ul>
+              <li *ngFor="let a of project.awards">{{a}}</li>
+          </ul>
+      </div>
+      <div class="item">
+          <p>{{project.desc1}}</p>
+          <a href="{{project.url}}">
+              <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path d="M16,16 L1,16 L1,22 L0,22 L0,15 L16.2928932,15 L13,11.7071068 L13.7071068,11 L18.0606602,15.3535534 L13.7071068,19.7071068 L13,19 L16,16 Z"
+                        fill="currentColor" fill-rule="nonzero" />
+              </svg>
+voir la page web          </a>
+      </div>
+  </div>
+  <img class="main-scrn" src="./assets/{{project.screenshotMain1}}" alt="" *ngIf="project" />
+  <div class="level3" *ngIf="project">
+      <img src="./assets/{{project.screenshotMobile}}" alt="" />
+      <p (click)="setActive()" (mouseenter)="circleFadeIn()" (mouseleave)="circleFadeOut()">{{project.desc2}}</p>
+  </div>
+  <div class="level4" *ngIf="project">
+      <div class="item" *ngFor="let s of project.screenshots1">
+          <img src="./assets/{{s}}" alt="" />
+      </div>
+  </div>
+  <div class="level5" *ngIf="project">
+      <img class="main-scrn" src="./assets/{{project.screenshotMain2}}" alt="" />
+      <img class="mobile-scrn" src="./assets/{{project.screenshotSec1}}" alt="" />
+  </div>
+  <div class="level6" *ngIf="project">
+      <div class="item" *ngFor="let s of project.screenshots2">
+          <img src="./assets/{{s}}" alt="" />
+      </div>
+  </div>
+  <div class="level7" *ngIf="project">
+      <a *ngIf="project.next" routerLink="/lang/projectalt/{{project.next.id}}">
+          <h6>Next</h6>
+          {{project.next.title}}
+      </a>
+  </div>
+  <div class="circle2">
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+</div>
+<div class="overlay-mobi dark">
+  <div class="lang">
+    <a routerLink="/projectalt/{{project.id}}">&nbsp;En&nbsp;</a>
+    <a href="javascript:void(0)" class="active">&nbsp;Fr&nbsp;</a>
+  </div>
+  <nav>
+    <ul>
+      <li><a routerLink="/lang/projects">Projets</a></li>
+      <li><a routerLink="/lang/agency">L'Agence</a></li>
+      <li><a routerLink="/lang/contact">Contact</a></li>
+    </ul>
+  </nav>
+</div>

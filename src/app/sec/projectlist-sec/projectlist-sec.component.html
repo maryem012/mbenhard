@@ -1,0 +1,14 @@
+<div class="projects">
+  <a *ngFor="let p of projects" (load)="anim($event)" routerLink="/lang/{{p.layout}}/{{p.id}}" class="item item-anim" style="background-image:url('./assets/{{p.img}}')"></a>
+  <div class="project-overlay">
+      <h5>Nos project</h5>
+      <div class="project-border first"></div>
+      <div class="project-container" *ngFor="let p of projects">
+          <section class="project-title">
+              <h6>{{p.year}}</h6>
+              <a routerLink="/lang/{{p.layout}}/{{p.id}}">{{p.title}}</a>
+          </section>
+          <div class="project-border"></div>
+      </div>
+  </div>
+</div>

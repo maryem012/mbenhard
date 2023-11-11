@@ -1,0 +1,52 @@
+<app-headersec pageTitle="{{pageTitle}}" url="/contact"></app-headersec>
+<main class="contact-page" *ngIf="content">
+    <img src="./assets/logo-dark.svg" alt="" class="logo" />
+    <div class="inner">
+        <h2>{{content.title}}</h2>
+        <p>
+            {{content.desc1}}
+        </p>
+        <div class="content">
+            <div class="item">
+                <h6>{{content.phone.title}}</h6>
+                {{content.phone.content}}
+                <br />
+                <br />
+                <br />
+                <h6>{{content.address.title}}</h6>
+                {{content.address.content1}}
+                <br />
+                {{content.address.content2}}
+            </div>
+            <div class="item">
+                <h6>{{content.enquiries.title}}</h6>
+                {{content.enquiries.content}}
+                <br />
+                <br />
+                <br />
+                <h6>{{content.socialTitle}}</h6>
+                <a href="{{s.url}}" *ngFor="let s of content.social">{{s.title}}</a>
+            </div>
+        </div>
+    </div>
+    <div class="lines-contact"></div>
+    <div class="footer-alt">
+        <div class="description">
+            {{content.desc2}}
+            <div class="copyright">&copy; {{year}} &ndash; {{content.agency}}</div>
+        </div>
+    </div>
+</main>
+<div class="overlay-mobi">
+    <div class="lang">
+      <a routerLink="/contact">&nbsp;En&nbsp;</a>
+      <a href="javascript:void(0)" class="active">&nbsp;Fr&nbsp;</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a routerLink="/lang/projects">Projets</a></li>
+        <li><a routerLink="/lang/agency">L'Agence</a></li>
+        <li><a routerLink="/lang/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>

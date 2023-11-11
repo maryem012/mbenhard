@@ -1,0 +1,25 @@
+<header>
+  <div class="back"></div>
+
+  <div class="logo" *ngIf="pageTitle === 'home' && content">
+      {{content.title}}
+  </div>
+  <div class="logo" *ngIf="pageTitle !== 'home' && content">
+      <img routerLink="/lang" (mouseenter)="logoAnim()" (mouseleave)="logoAnim()" src="./assets/logo-dark.svg" alt="" />
+      <div class="page-title">&nbsp;&nbsp;&mdash;&nbsp;&nbsp;{{pageTitle}}<br />&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Home</div>
+  </div>
+  <div class="lang" *ngIf="content">
+      <a routerLink="{{url}}">&nbsp;{{content.lang1}}&nbsp;</a>
+      <a href="javascript:void(0)" class="active">&nbsp;{{content.lang2}}&nbsp;</a>
+  </div>
+  <nav *ngIf="content">
+      <ul>
+          <li><a class="{{pageTitle === 'Projects' ? 'active' : ''}}" routerLink="/lang/projects">{{content.projects}}</a></li>
+          <li><a class="{{pageTitle === 'The Agency' ? 'active' : ''}}" routerLink="/lang/agency">{{content.agency}}</a></li>
+          <li><a class="{{pageTitle === 'Contact' ? 'active' : ''}}" routerLink="/lang/contact">{{content.contact}}</a></li>
+      </ul>
+  </nav>
+  <div class="btn-menu" *ngIf="content">
+      <a href="javascript:void(0)" >{{content.menu}}<br />{{content.close}}</a>
+  </div>
+</header>

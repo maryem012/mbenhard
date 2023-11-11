@@ -1,0 +1,19 @@
+<app-header pageTitle="{{pageTitle}}" url="/lang/projects"></app-header>
+<main class="projects-page">
+    <img src="./assets/logo-dark.svg" alt="" class="logo" />
+    <app-project-list></app-project-list>
+</main>
+<app-footer></app-footer>
+<div class="overlay-mobi">
+    <div class="lang">
+      <a href="javascript:void(0)" class="active">&nbsp;En&nbsp;</a>
+      <a routerLink="/lang/projects">&nbsp;Fr&nbsp;</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a routerLink="/projects">Projects</a></li>
+        <li><a routerLink="/agency">The Agency</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>

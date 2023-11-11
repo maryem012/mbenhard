@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Benhard • Digital creative agency</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+</head>
+<body>
+  <app-root></app-root>
+  <script>
+    $(window).scroll(function() {
+      if($(window).width() > 1024) {
+        if(parseInt($('html, body').scrollTop()) < $(window).height()) {
+          $('.col-left').css('background-position-y', -150 + ($('html, body').scrollTop() * .1));
+          $('.col-right').css('background-position-y', -150 + ($('html, body').scrollTop() * .1));
+        }
+        if(parseInt($('html, body').scrollTop()) < $(window).height() * .8) {
+          $('.circle').css('top', ($('html, body').scrollTop() * .1));
+          $('.headings').css('top', -($('html, body').scrollTop() * .1));
+        }
+        if(parseInt($('html, body').scrollTop()) > $(window).width() * .625) {
+          $('.service-item').addClass('active');
+          $('.mission').addClass('active');
+          $('h6').addClass('active');
+        }
+        if(parseInt($('html, body').scrollTop()) > $(window).width() * 1.5) {
+          console.log('test2');
+          $('.projects .project-overlay').css('top', $(window).width() * .1 - (($('html, body').scrollTop() - $(window).width() * 1.5) * .05));
+        }
+        for(let i = 0; i < $('.projects .item').length; i++) {
+          if(parseInt($('html, body').scrollTop()) > $(window).width() * 1.5 + i * $(window).width() * .265625) {
+            $('.projects .item:nth-of-type(' + (i + 1) + ')').css('background-position-y', -150 + (($('html, body').scrollTop() - $(window).width() * 1.5 - i * $(window).width() * .265625) * .2));
+            $('.projects .project-container:nth-of-type(' + (i + 2) + ') .project-title').fadeTo(400, 1);
+          }
+        }
+        try {
+          if(parseInt($('html, body').scrollTop()) > $('footer').offset().top - $(window).width() * .5) {
+              $('footer p').addClass('active');
+              $('footer h6').addClass('active');
+          }
+        } catch {
+          console.log('error');
+        }
+        $('.projects-page .project-overlay').css('top', $(window).width() * .101 - $('html, body').scrollTop() * .05);
+        for(let i = 0; i < $('.projects .item').length; i++) {
+          if(parseInt($('html, body').scrollTop()) > $(window).width() * .05 + i * $(window).width() * .265625) {
+            $('.projects-page .item:nth-of-type(' + (i + 1) + ')').css('background-position-y', -150 + (($('html, body').scrollTop() - $(window).width() * .05 - i * $(window).width() * .265625) * .2));
+            $('.projects-page .project-container:nth-of-type(' + (i + 2) + ') .project-title').fadeTo(400, 1);
+          }
+        }
+        $('.lines-contact').css('background-position-x', -150 + (($('html, body').scrollTop() - $(window).width() * .033) * .1));
+        if($('html, body').scrollTop() < $(window).height()) {
+          $('.agency-page .neck').css('margin-top', -(($('html, body').scrollTop()) * .2 + $(window).width() * .1));
+        }
+        if($('html, body').scrollTop() > $(window).height() * .6) {
+          $('.agency-page .level2 p').animate({ top: '9.375rem' }, 400);
+        }
+        try {
+          if($('html, body').scrollTop() < $(window).height() || ($('html, body').scrollTop() > $('.level6').offset().top && $('html, body').scrollTop() < $('.level7').offset().top)) {
+            $('.agency-page header').addClass('dark');
+          } else {
+            $('.agency-page header').removeClass('dark');
+          }
+        } catch {
+          console.log('error');
+        }
+        try {
+          if($('html, body').scrollTop() > $('.level7').offset().top - $(window).width() * .4) {
+            $('.agency-page .item').each(function(i) {
+              $(this).delay(i * 100).animate({ opacity:1, top: 0 }, 400);
+            });
+          }
+        } catch {
+          console.log('error');
+        }
+        if($('html, body').scrollTop() < $(window).height()) {
+          $('.project-page .main-img').css('background-position-y', -150 + (($('html, body').scrollTop() - $(window).width() * .0875) * .2));
+        }
+        try {
+          $('.level2 .item').first().addClass('active');
+          $('.level2 .item').last().addClass('active');
+        } catch {
+          console.log('error');
+        }
+        try {
+          $('.project-page .level4 .item img').each(function(i) {
+            if($('html, body').scrollTop() > $(this).parent().offset().top - $(window).width() * .5) {
+              $(this).animate({ top: 0, opacity: 1 }, 400);
+            }
+          });
+        } catch {
+          console.log('error');
+        }
+        try {
+          $('.project-page .level6 .item img').each(function(i) {
+            if($('html, body').scrollTop() > $(this).parent().offset().top - $(window).width() * .4) {
+              $(this).animate({ top: 0, opacity: 1 }, 400);
+            }
+          });
+        } catch {
+          console.log('error');
+        }
+        try {
+          if($('html, body').scrollTop() > $('.project-page .level5').offset().top) {
+            $('.project-page header').removeClass('dark');
+          } else {
+            $('.project-page header').addClass('dark');
+          }
+        } catch {
+          console.log('error');
+        }
+        if($('html, body').scrollTop() < $(window).height()) {
+          $('.projectalt-page .main-img').css('background-position-y', -150 + (($('html, body').scrollTop() - $(window).width() * .0875) * .2));
+        }
+        try {
+          $('.projectalt-page .level4 .item img').each(function(i) {
+            if($('html, body').scrollTop() > $(this).parent().offset().top - $(window).width() * .3) {
+              $(this).animate({ top: 0, opacity: 1 }, 400);
+            }
+          });
+        } catch {
+          console.log('error');
+        }
+        try {
+          $('.projectalt-page .level6 .item img').each(function(i) {
+            if($('html, body').scrollTop() > $(this).parent().offset().top - $(window).width() * .3) {
+              $(this).animate({ top: 0, opacity: 1 }, 400);
+            }
+          });
+        } catch {
+          console.log('error');
+        }
+        try {
+          if($('html, body').scrollTop() > $('.projectalt-page .level3').offset().top && $('html, body').scrollTop() < $('.projectalt-page .level5').offset().top) {
+            $('.projectalt-page header').addClass('dark');
+          } else {
+            $('.projectalt-page header').removeClass('dark');
+          }
+        } catch {
+          console.log('error');
+        }
+        try {
+          if($('html, body').scrollTop() > $('.main-scrn').offset().top - $(window).width() * .5) {
+            $('.main-scrn').animate({ top: 0, opacity: 1 }, 400);
+          }
+        } catch {
+          console.log('error');
+        }
+      } else {
+        console.log(parseInt($('html, body').scrollTop()) > $(window).height() * .625);
+        if(parseInt($('html, body').scrollTop()) > $(window).height() * .625) {
+          $('.service-item').addClass('active');
+          $('.mission').addClass('active');
+          $('h6').addClass('active');
+        }
+      }
+    });
+    window.addEventListener('resize', function () {
+  if (window.innerWidth > 1024) {
+    // Your code for handling window resize
+  }
+    });
+
+  document.addEventListener('mousemove', function (e) {
+  // Access mouse coordinates with e.clientX and e.clientY
+  // Your code for handling mouse movement
+});
+    if($(window).width() > 1024) {
+      $('html').css('font-size', Math.round($(window).width() * .01));
+    }
+  </script>
+</body>
+</html>
+

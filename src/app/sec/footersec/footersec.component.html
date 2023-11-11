@@ -1,0 +1,34 @@
+<footer>
+  <img src="./assets/lines.jpg" class="lines" alt="" />
+  <div class="content" *ngIf="content">
+      <img src="./assets/logo-light.svg" alt="" class="logo-mobi" />
+      <div class="item">
+          <h6>{{content.phone.title}}</h6>
+          {{content.phone.content}}
+          <br />
+          <br />
+          <br />
+          <h6>{{content.address.title}}</h6>
+          {{content.address.content1}}
+          <br />
+          {{content.address.content2}}
+      </div>
+      <div class="item">
+          <h6>{{content.enquiries.title}}</h6>
+          {{content.enquiries.content}}
+          <br />
+          <br />
+          <br />
+          <h6>{{content.socialTitle}}</h6>
+          <a href="{{s.url}}" *ngFor="let s of content.social">{{s.title}}</a>
+      </div>
+      <div class="item">
+          <img src="./assets/logo-light.svg" alt="" />
+          <p>
+              {{content.desc1}}
+          </p>
+          <div class="copyright">&copy; {{year}} &ndash; {{content.agency}}</div>
+      </div>
+  </div>
+</footer>
+

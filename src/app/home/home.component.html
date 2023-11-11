@@ -1,0 +1,55 @@
+<app-header [pageTitle]="pageTitle" [url]="'/lang'"></app-header>
+<main *ngIf="content">
+  <div class="level1">
+    <div class="headings">
+      <h1 >{{content.headings}}</h1>
+    </div>
+    <div class="col-left" [style.backgroundImage]="'url(/assets/' + content.colLeft + ')'"></div>
+    <div class="col-right" [style.backgroundImage]="'url(/assets/' + content.colRight + ')'"></div>
+    <img class="circle" src="./assets/circle3.gif" alt="" />
+    <ul class="social">
+      <div class="social-dot"></div>
+      <li *ngFor="let s of content.social"><a >{{s.title}}</a></li>
+    </ul>
+  </div>
+
+  <div class="level2">
+    <div class="item">
+      <h6>{{content.skills.title}}</h6>
+      <div class="service-item" *ngFor="let s of content.skills.skills">{{s}}</div>
+    </div>
+    <div class="item">
+      <h6>{{content.mission.title}}</h6>
+      <p class="mission">{{content.mission.desc}}</p>
+      <br />
+      <a [routerLink]="content.mission.link.url" class="btn">{{content.mission.link.title}}</a>
+    </div>
+  </div>
+  <div class="level3">
+    <h6>{{content.workedFor.title}}</h6>
+    <div class="to-left">
+        <div class="inner">
+            {{content.workedFor.line1}} {{content.workedFor.line1}} {{content.workedFor.line1}}
+        </div>
+    </div>
+    <div class="to-right">
+        <div class="inner">
+            {{content.workedFor.line2}} {{content.workedFor.line2}} {{content.workedFor.line2}}
+        </div>
+    </div>
+</div>
+  <app-project-list></app-project-list>
+</main>
+<app-footer></app-footer>
+<div class="overlay-mobi">
+  <div class="lang">
+    <a href="javascript:void(0)" class="active">&nbsp;En&nbsp;</a>
+  </div>
+  <nav>
+    <ul>
+      <li><a [routerLink]="'/projects'">Projects</a></li>
+      <li><a [routerLink]="'/agency'">The Agency</a></li>
+      <li><a [routerLink]="'/contact'">Contact</a></li>
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,73 @@
+<div class="projectalt-page" *ngIf="project">
+  <app-headersec></app-headersec>
+  <div class="level1">
+    <div class="main-img" [style.background]="'url(./assets/' + project.img + ') no-repeat 150% left -150px'"></div>
+    <h2>{{project.title}}</h2>
+  </div>
+  <div class="level2">
+    <div class="item">
+      {{project.year}}
+      <ul>
+        <li *ngFor="let s of project.skills">{{s}}</li>
+      </ul>
+      <ul>
+        <li *ngFor="let a of project.awards">{{a}}</li>
+      </ul>
+    </div>
+    <div class="item">
+      <p>{{project.desc1}}</p>
+      <a [href]="project.url">
+        <svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16,16 L1,16 L1,22 L0,22 L0,15 L16.2928932,15 L13,11.7071068 L13.7071068,11 L18.0606602,15.3535534 L13.7071068,19.7071068 L13,19 L16,16 Z"
+            [attr.fill]="'currentColor'" fill-rule="nonzero"
+          />
+        </svg>
+        See the website
+      </a>
+    </div>
+  </div>
+  <img class="main-scrn" [src]="'./assets/' + project.screenshotMain1" alt="" />
+  <div class="level3">
+    <img [src]="'./assets/' + project.screenshotMobile" alt="" />
+    <p (click)="setActive()" (mouseenter)="circleFadeIn()" (mouseleave)="circleFadeOut()">{{project.desc2}}</p>
+  </div>
+  <div class="level4">
+    <div class="item" *ngFor="let s of project.screenshots1">
+      <img [src]="'./assets/' + s" alt="" />
+    </div>
+  </div>
+  <div class="level5">
+    <img class="main-scrn" [src]="'./assets/' + project.screenshotMain2" alt="" />
+    <img class="mobile-scrn" [src]="'./assets/' + project.screenshotSec1" alt="" />
+  </div>
+  <div class="level6">
+    <div class="item" *ngFor="let s of project.screenshots2">
+      <img [src]="'./assets/' + s" alt="" />
+    </div>
+  </div>
+  <div class="level7">
+    <a *ngIf="project.next" [routerLink]="'/projectalt/' + project.next.id">
+      <h6>Next</h6>
+      {{project.next.title}}
+    </a>
+  </div>
+  <div class="circle2">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<div class="overlay-mobi">
+  <div class="lang">
+    <a [routerLink]="url">&nbsp;En&nbsp;</a>
+    <a href="javascript:void(0)" class="active">&nbsp;Fr&nbsp;</a>
+  </div>
+  <nav>
+    <ul>
+      <li><a [routerLink]="'/projects'">Projects</a></li>
+      <li><a [routerLink]="'/agency'">the Agency</a></li>
+      <li><a [routerLink]="'/contact'">Contact</a></li>
+    </ul>
+  </nav>
+</div>

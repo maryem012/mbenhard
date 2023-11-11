@@ -1,0 +1,313 @@
+{
+    "home": {
+        "headings":
+            "Benhard is a creative agency that builds powerful digital solutions." ,
+        "colLeft": "img1.jpg",
+        "colRight": "img2.jpg",
+        "social": [
+            {
+                "title": "Tw",
+                "url": "https://twitter.com"
+            },
+            {
+                "title": "Lk",
+                "url": "javascript:void(0)"
+            },
+            {
+                "title": "In",
+                "url": "javascript:void(0)"
+            },
+            {
+                "title": "Git",
+                "url": "javascript:void(0)"
+            }
+        ],
+        "skills": {
+            "title": "Skills",
+            "skills": [
+                "Strategy",
+                "Brand Identities",
+                "Art Direction",
+                "UI/UX Design",
+                "Back End",
+                "Admin System",
+                "Front End"
+            ]
+        },
+        "mission": {
+            "title": "Mission & Vision",
+            "desc": "We are Rezo Zero, a digital creative agency that designs and develops unique brand identities and tailor-made digital solutions. We help our clients from the definition of their strategy to the realization of their digital ecosystem. At the heart of our approach is the constant search for the juncture between aesthetic beauty and technical performance. We envision each of our projects as a singular piece at the service of our clients’ communication goals. We want them to be resolutely turned towards agility and simplicity to face the complex challenges of the modern world.",
+            "link": {
+                "title": "More",
+                "url": "/agency"
+            }
+        },
+        "workedFor": {
+            "title": "We worked for them",
+            "line1": "Nike Adidas Porsche Nissan Harvard Bacardi Barckley Toyota Merzedes Prinston",
+            "line2": "Nike Adidas Porsche Nissan Harvard Bacardi Barckley Toyota Merzedes Prinston"
+        }
+    },
+    "agency": {
+        "title": "The Agency",
+        "mainImg": "neck.jpg",
+        "desc1": "Rezo Zero is a digital creative agency that imagines, designs and develops unique brand identities and tailor-made digital solutions for cultural and corporate projects.",
+        "skills": {
+            "title": "Skills",
+            "skills": [
+                "Strategy",
+                "Brand Identities",
+                "Art Direction",
+                "UI/UX Design",
+                "Back End",
+                "Admin System",
+                "Front End"
+            ]
+        },
+        "passion": {
+            "title": "Passion",
+            "desc": "Contemporary art, functionalism and architecture of the 1920s are all inspirations that feed our thoughts and achievements. Sharing a common passion for visual identities and digital technologies, we strive to provide both relevant and creative solutions to meet the objectives of our clients. And because combining performance and precision best illustrates our daily ambition, our work today enjoys international recognition."
+        },
+        "lines": "lines.jpg",
+        "desc2": "At the heart of our work, the constant search for the juncture between aesthetics and technical performances.",
+        "desc3": "The workflow developed by Rezo Zero since 2013 - and now proven - is an essential component of the success of its projects. Its application extends beyond the precise analysis of client needs, confronted with market trends, to the implementation of a strict quality process to fend off visual and technological obsolescence. Available to clients and serving both as CMS and a framework, Roadiz helps to further enhance the efficiency and reliability of the workflow. This open-source solution guarantees security, transparency and scalability, and the use of its back-office is as simple as it is intuitive.",
+        "origin": {
+            "title": "Origin",
+            "desc": "Rezo Zero is an anagram with reference to the binary language. Zero serves as a starting point, the basic element of digital; a circle in perpetual movement that invites creative exploration."
+        },
+        "team": {
+            "title": "Core Team",
+            "team": [
+                {
+                    "name": "Julien Blanchet",
+                    "title": "Creative Director • Founder & Associate"
+                },
+                {
+                    "name": "Ambroise Maupate",
+                    "title": "Chief Technical Officer • Associate"
+                },
+                {
+                    "name": "Evghenia Diligul",
+                    "title": "Account & Project manager"
+                },
+                {
+                    "name": "Manuel Odelain",
+                    "title": "Lead Front Dev"
+                },
+                {
+                    "name": "Charlotte Carré",
+                    "title": "Art Director"
+                },
+                {
+                    "name": "Vincent Béchereau",
+                    "title": "Art Director"
+                },
+                {
+                    "name": "Hakim Benelbaal",
+                    "title": "Front dev"
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "desc1": "For any enquiries, or just to say hello, get in touch and contact us.",
+        "phone": {
+            "title": "Phone",
+            "content": "+33 (0) 555 05 05"
+        },
+        "address": {
+            "title": "Address",
+            "content1": "30 Road Burdeau 22 555 Lyon",
+            "content2": "France"
+        },
+        "enquiries": {
+            "title": "Enquiries",
+            "content": "contact@rezo-zero.com"
+        },
+        "socialTitle": "Follow us",
+        "social": [
+            {
+                "title": "Tw",
+                "url": "https://twitter.com"
+            },
+            {
+                "title": "Lk",
+                "url": "javascript:void(0)"
+            },
+            {
+                "title": "In",
+                "url": "javascript:void(0)"
+            },
+            {
+                "title": "Git",
+                "url": "javascript:void(0)"
+            }
+        ],
+        "desc2": "Founded in 2013, Rezo Zero is a digital creative agency that designs and develops unique brand identities and tailor-made digital solutions. Our teams are based in Lyon with an extension in Paris, France.",
+        "agency": "Rezo Zero"
+    },
+    "header": {
+        "title": "Digital creative agency",
+        "lang1": "En",
+        "lang2": "Fr",
+        "projects": "Projects",
+        "agency": "The Agency",
+        "contact": "Contact",
+        "menu": "Menu",
+        "close": "Close"
+    },
+    "footer": {
+        "desc1": "Founded in 2013, Rezo Zero is a digital creative agency that designs and develops unique brand identities and tailor-made digital solutions. Our teams are based in Lyon with an extension in Paris, France.",
+        "agency": "Rezo Zero",
+        "phone": {
+            "title": "Phone",
+            "content": "+33 (0) 555 05 05"
+        },
+        "address": {
+            "title": "Address",
+            "content1": "30 Road Burdeau 22 555 Lyon",
+            "content2": "France"
+        },
+        "enquiries": {
+            "title": "Enquiries",
+            "content": "contact@rezo-zero.com"
+        },
+        "socialTitle": "Follow us",
+        "social": [
+            {
+                "title": "Tw",
+                "url": "https://twitter.com"
+            },
+            {
+                "title": "Lk",
+                "url": "javascript:void(0)"
+            },
+            {
+                "title": "In",
+                "url": "javascript:void(0)"
+            },
+            {
+                "title": "Git",
+                "url": "javascript:void(0)"
+            }
+        ]
+    },
+    "projects": [
+        {
+            "id": 1,
+            "title": "Expodcast",
+            "img": "project1.jpg",
+            "year": 2020,
+            "url": "javascript:void(0)",
+            "layout": "projectalt",
+            "skills": [
+                "Strategy",
+                "UX / UI Design",
+                "Art direction",
+                "Admin system",
+                "Back end",
+                "Front end"
+            ],
+            "awards": [
+                "Awwwards",
+                "Site of the Day",
+                "Dev award",
+                "Honorable Mention",
+                "Mobile Excellence",
+                "Commarts"
+            ],
+            "desc1": "The Centre de Musique Baroque de Versailles (CMBV - cmbv.fr) wished to set up a sight & sound experience which plunge the user into the heart of French baroque music. Rezo Zero team was in charge of the creation of an immersive virtual exhibition presented through 6 podcasts. They form the narrative framework of an interactive experience augmented with many content and media. The ergonomy is both horizontal and vertical: we created an horizontal navigation to switch easily between the 6 episodes, as well as a vertical navigation to discover all the various contents inside of each episode. This Expodcast called Music and Musicians at the Royal Chapel is the first of a series to be discovered soon. #MadeWithRoadiz",
+            "screenshotMain1": "main_scrn1.jpg",
+            "screenshotMobile": "mobile_scrn1.png",
+            "desc2": "The waveforms of each podcast are based on the shining logotype for a unique user experience.",
+            "screenshots1": [
+                "mini_scrn1.jpg",
+                "mini_scrn1.jpg",
+                "mini_scrn1.jpg"
+            ],
+            "screenshotMain2": "main_scrn2.jpg",
+            "screenshotSec1": "mobile_scrn2.png",
+            "screenshots2": [
+                "mini_scrn1.jpg",
+                "mini_scrn1.jpg",
+                "mini_scrn1.jpg"
+            ],
+            "next": {
+                "id": 2,
+                "title": "Les éclaireurs"
+            }
+        },
+        {
+            "id": 2,
+            "title": "Les éclaireurs",
+            "img": "project2.jpg",
+            "year": 2020,
+            "url": "javascript:void(0)",
+            "layout": "projectalt",
+            "skills": [
+                "UX / UI Design",
+                "Art direction",
+                "Admin system",
+                "Back end",
+                "Front end"
+            ],
+            "awards": [],
+            "desc1": "Les éclaireurs is a lighting design agency which is illustrated by its plastic and technical approach. The agency has a strong experience in the contemporary lighting enhancement of public spaces with high image stakes, urban complexes and public parks. The company is known for its scenographic approach to space, creating urban wanderings, making the space legible, playing with the temporalities of the city and its uses to better support them. They desired a site with a minimal graphic approach. We accompanied them in the overhaul of their site.",
+            "screenshotMain1": "main_scrn3.jpg",
+            "screenshotMobile": "mobile_scrn3.png",
+            "desc2": "The basics: a few touches of red and the Helvetica Neue font from their initial identity",
+            "screenshots1": [
+                "mini_scrn2.jpg",
+                "mini_scrn2.jpg",
+                "mini_scrn2.jpg"
+            ],
+            "screenshotMain2": "main_scrn4.jpg",
+            "screenshotSec1": "sec_scrn.jpg",
+            "screenshots2": [
+                "mini_scrn2.jpg",
+                "mini_scrn2.jpg",
+                "mini_scrn2.jpg"
+            ],
+            "next": {
+                "id": 3,
+                "title": "Truffle Capital"
+            }
+        },
+        {
+            "id": 3,
+            "title": "Truffle Capital",
+            "img": "project4.jpg",
+            "year": 2020,
+            "url": "javascript:void(0)",
+            "layout": "projectalt",
+            "skills": [
+                "Strategy",
+                "Brand identity",
+                "UX / UI Design",
+                "Art direction",
+                "Admin system",
+                "Back end",
+                "Front end"
+            ],
+            "awards": [],
+            "desc1": "For the past 18 years, Truffle Capital has been creating and financing until success, in France and Europe, radical and disruptive innovations in two areas of expertise, Life Sciences and Information Technology. Truffle Capital has raised more than €1.1 billion since its creation and financed 70 companies. The company now has a portfolio of 35 companies with €700 million under management. Truffle asked us to create a new logo and website for the company. We have created a coherent, modern look that puts Truffle Capital back at the heart of its mission: to create and support companies that are revolutionising their sectors and will become the next leaders.",
+            "screenshotMain1": "main_scrn5.jpg",
+            "screenshotMobile": "mobile_scrn4.png",
+            "desc2": "In reference to the logo, we have developed a perpetual floating wave, like a living organism that echoes BioTech.",
+            "screenshots1": [
+                "mini_scrn3.jpg",
+                "mini_scrn3.jpg",
+                "mini_scrn3.jpg"
+            ],
+            "screenshotMain2": "main_scrn6.jpg",
+            "screenshotSec1": "sec_scrn2.png",
+            "screenshots2": [
+                "mini_scrn3.jpg",
+                "mini_scrn3.jpg",
+                "mini_scrn3.jpg"
+            ],
+            "next": null
+        }
+    ]
+}
