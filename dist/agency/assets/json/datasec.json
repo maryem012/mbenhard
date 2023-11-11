@@ -1,0 +1,314 @@
+{
+    "home": {
+        "headings":
+            "Benhard est une agence créative qui conçoit des solutions digitales.",
+
+        "colLeft": "img1.jpg",
+        "colRight": "img2.jpg",
+        "social": [
+            {
+                "title": "Tw",
+                "url": "https://twitter.com"
+            },
+            {
+                "title": "Lk",
+                "url": "javascript:void(0)"
+            },
+            {
+                "title": "In",
+                "url": "javascript:void(0)"
+            },
+            {
+                "title": "Git",
+                "url": "javascript:void(0)"
+            }
+        ],
+        "skills": {
+            "title": "Savoir-faire",
+            "skills": [
+                "Stratégie",
+                "Identité de marque",
+                "Direction artistique",
+                "UI/UX Design",
+                "Back End",
+                "Admin système",
+                "Front End"
+            ]
+        },
+        "mission": {
+            "title": "Mission & vision",
+            "desc": "L’agence digitale créative, Rezo Zero, conçoit et développe des identités de marque uniques et des solutions digitales sur-mesure. Nous accompagnons nos clients de la définition de leur stratégie à la réalisation de leur écosystème digital. Au cœur de notre démarche, la recherche permanente du point de rencontre entre esthétique affirmée et performances techniques. Nous envisageons chacune de nos réalisations comme une création singulière au service des objectifs de communication de nos clients. Nous les souhaitons résolument tournées vers l’agilité et la simplicité pour répondre aux enjeux complexes du monde moderne.",
+            "link": {
+                "title": "Plus",
+                "url": "/lang/agency"
+            }
+        },
+        "workedFor": {
+            "title": "Quelques-uns de nos clients",
+            "line1": "Nike Adidas Porsche Nissan Harvard Bacardi Barckley Toyota Merzedes Prinston",
+            "line2": "Nike Adidas Porsche Nissan Harvard Bacardi Barckley Toyota Merzedes Prinston"
+        }
+    },
+    "agency": {
+        "title": "L'Agence",
+        "mainImg": "neck.jpg",
+        "desc1": "L’agence digitale créative, Rezo Zero, imagine, conçoit et développe des identités de marque uniques et des solutions digitales sur-mesure pour des projets culturels et corporate.",
+        "skills": {
+            "title": "Savoir-faire",
+            "skills": [
+                "Stratégie",
+                "Identité de marque",
+                "Direction artistique",
+                "UI/UX Design",
+                "Back End",
+                "Admin système",
+                "Front End"
+            ]
+        },
+        "passion": {
+            "title": "Passion",
+            "desc": "Art contemporain, fonctionnalisme ou encore architecture des années 1920 sont autant d’inspirations qui nourrissent nos réflexions et nos réalisations. Partageant une passion commune pour l’identité visuelle et le digital, nous recherchons pour chaque projet la solution créative la plus pertinente, à même de répondre aux objectifs de nos clients. Et parce qu’associer performance et précision illustre le mieux notre ambition quotidienne, nos travaux jouissent aujourd’hui d’une reconnaissance internationale."
+        },
+        "lines": "lines.jpg",
+        "desc2": "La recherche permanente du point de rencontre entre esthétique affirmée et performances techniques.",
+        "desc3": "Le workflow développé par Rezo Zero depuis 2013 - et désormais éprouvé – est une composante essentielle de la réussite de ses projets. Son application s’étend de l’analyse précise des besoins du client, confrontés aux tendances du marché, à la mise en œuvre d’un process qualité strict, tendant à repousser l’obsolescence visuelle et technologique. Proposée aux clients, la plateforme de développement (framework) et de gestion de contenus (CMS) Roadiz conçue par Rezo Zero renforce encore l’efficacité et la fiabilité de ce workflow. Open-source, elle garantit sécurité, transparence et évolutivité, et l’utilisation de son back-office est aussi simple qu’intuitive.",
+        "origin": {
+            "title": "Origine",
+            "desc": "Rezo Zero est un anagramme en référence au langage binaire. Le Zéro comme point de départ, l’élément de base du digital, un cercle en perpétuel mouvement qui invite à l’exploration créative."
+        },
+        "team": {
+            "title": "Core Team",
+            "team": [
+                {
+                    "name": "Julien Blanchet",
+                    "title": "Directeur de création • Fondateur & Associé"
+                },
+                {
+                    "name": "Ambroise Maupate",
+                    "title": "Directeur technique • Associé"
+                },
+                {
+                    "name": "Evghenia Diligul",
+                    "title": "Cheffe de projet et comptes clients"
+                },
+                {
+                    "name": "Manuel Odelain",
+                    "title": "Lead Front Dev"
+                },
+                {
+                    "name": "Charlotte Carré",
+                    "title": "Directrice artistique"
+                },
+                {
+                    "name": "Vincent Béchereau",
+                    "title": "Directeur artistique"
+                },
+                {
+                    "name": "Hakim Benelbaal",
+                    "title": "Développeur Front-end"
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "desc1": "Vous avez un projet, une demande ? Nous serions ravis de pouvoir vous aider, contactez-nous.",
+        "phone": {
+            "title": "Téléphone",
+            "content": "+33 (0) 555 05 05"
+        },
+        "address": {
+            "title": "Adresse",
+            "content1": "30 Road Burdeau 22 555 Lyon",
+            "content2": "France"
+        },
+        "enquiries": {
+            "title": "Demandes",
+            "content": "contact@rezo-zero.com"
+        },
+        "socialTitle": "Suivez-nous",
+        "social": [
+            {
+                "title": "Tw",
+                "url": "https://twitter.com"
+            },
+            {
+                "title": "Lk",
+                "url": "javascript:void(0)"
+            },
+            {
+                "title": "In",
+                "url": "javascript:void(0)"
+            },
+            {
+                "title": "Git",
+                "url": "javascript:void(0)"
+            }
+        ],
+        "desc2": "Créée en 2013, Rezo Zero est une agence digitale créative qui invente et conçoit des identités de marque uniques et des solutions digitales sur-mesure. Son équipe est basée à Lyon avec une antenne à Paris, France.",
+        "agency": "Rezo Zero"
+    },
+    "header": {
+        "title": "Agence digitale créative",
+        "lang1": "En",
+        "lang2": "Fr",
+        "projects": "Projets",
+        "agency": "L'Agence",
+        "contact": "Contact",
+        "menu": "Menu",
+        "close": "Fermer"
+    },
+    "footer": {
+        "desc1": "Créée en 2013, Rezo Zero est une agence digitale créative qui invente et conçoit des identités de marque uniques et des solutions digitales sur-mesure. Son équipe est basée à Lyon avec une antenne à Paris, France.",
+        "agency": "Rezo Zero",
+        "phone": {
+            "title": "Téléphone",
+            "content": "+33 (0) 555 05 05"
+        },
+        "address": {
+            "title": "Adresse",
+            "content1": "30 Road Burdeau 22 555 Lyon",
+            "content2": "France"
+        },
+        "enquiries": {
+            "title": "Demandes",
+            "content": "contact@rezo-zero.com"
+        },
+        "socialTitle": "Suivez-nous",
+        "social": [
+            {
+                "title": "Tw",
+                "url": "https://twitter.com"
+            },
+            {
+                "title": "Lk",
+                "url": "javascript:void(0)"
+            },
+            {
+                "title": "In",
+                "url": "javascript:void(0)"
+            },
+            {
+                "title": "Git",
+                "url": "javascript:void(0)"
+            }
+        ]
+    },
+    "projects": [
+        {
+            "id": 1,
+            "title": "Expodcast",
+            "img": "project1.jpg",
+            "year": 2020,
+            "url": "javascript:void(0)",
+            "layout": "projectalt",
+            "skills": [
+                "Strategy",
+                "UX / UI Design",
+                "Art direction",
+                "Admin system",
+                "Back end",
+                "Front end"
+            ],
+            "awards": [
+                "Awwwards",
+                "Site of the Day",
+                "Dev award",
+                "Honorable Mention",
+                "Mobile Excellence",
+                "Commarts"
+            ],
+            "desc1": "Le Centre de Musique Baroque de Versailles (CMBV - cmbv.fr) a souhaité mettre en place une exposition virtuelle qui plonge l’utilisateur au cœur de la musique baroque française. Rezo Zero a été chargé de la création d’une exposition virtuelle immersive présentée à travers 6 podcasts (Expodcast). Ils forment la trame narrative d’une expérience interactive enrichie par de nombreux contenus et médias. Pour inciter à l’exploration, l’ergonomie du site est à la fois horizontale et verticale. Elle reprend le principe d’horizontalité d’une lecture audio afin de guider l’utilisateur dans la découverte des 6 épisodes et s’appuie sur la verticalité pour l’enchaînement des différents contenus riches au sein de chaque épisode. Cet Expodcast appelé Musique et musiciens à la Chapelle Royale est le premier d’une série à découvrir prochainement. #MadeWithRoadiz",
+            "screenshotMain1": "main_scrn1.jpg",
+            "screenshotMobile": "mobile_scrn1.png",
+            "desc2": "Au cœur du concept, le logotype rayonne en représentant le spectre audio des podcasts.",
+            "screenshots1": [
+                "mini_scrn1.jpg",
+                "mini_scrn1.jpg",
+                "mini_scrn1.jpg"
+            ],
+            "screenshotMain2": "main_scrn2.jpg",
+            "screenshotSec1": "mobile_scrn2.png",
+            "screenshots2": [
+                "mini_scrn1.jpg",
+                "mini_scrn1.jpg",
+                "mini_scrn1.jpg"
+            ],
+            "next": {
+                "id": 2,
+                "title": "Les éclaireurs"
+            }
+        },
+        {
+            "id": 2,
+            "title": "Les éclaireurs",
+            "img": "project2.jpg",
+            "year": 2020,
+            "url": "javascript:void(0)",
+            "layout": "projectalt",
+            "skills": [
+                "UX / UI Design",
+                "Art direction",
+                "Admin system",
+                "Back end",
+                "Front end"
+            ],
+            "awards": [],
+            "desc1": "Les éclaireurs est une agence de conception lumière qui s’illustre par son approche plastique et technique. L’agence bénéficie d’une solide expérience en matière de mise en valeur lumière contemporaine d’espaces publics à fort enjeu d’image, d’ensembles urbains et de parcs publics. La société se caractérise par une approche scénographique de l’espace, créant des déambulations urbaines, rendant lisible l’espace, jouant des temporalités de la ville et ses usages pour mieux les soutenir. Les éclaireurs souhaitaient avoir un site à l’approche graphique minimale. Nous les avons accompagnés dans la refonte de leur site.",
+            "screenshotMain1": "main_scrn3.jpg",
+            "screenshotMobile": "mobile_scrn3.png",
+            "desc2": "Les bases : quelques touches de rouge et la typographie Helvetica Neue issue de leur charte initiale",
+            "screenshots1": [
+                "mini_scrn2.jpg",
+                "mini_scrn2.jpg",
+                "mini_scrn2.jpg"
+            ],
+            "screenshotMain2": "main_scrn4.jpg",
+            "screenshotSec1": "sec_scrn.jpg",
+            "screenshots2": [
+                "mini_scrn2.jpg",
+                "mini_scrn2.jpg",
+                "mini_scrn2.jpg"
+            ],
+            "next": {
+                "id": 3,
+                "title": "Truffle Capital"
+            }
+        },
+        {
+            "id": 3,
+            "title": "Truffle Capital",
+            "img": "project4.jpg",
+            "year": 2020,
+            "url": "javascript:void(0)",
+            "layout": "projectalt",
+            "skills": [
+                "Strategy",
+                "Brand identity",
+                "UX / UI Design",
+                "Art direction",
+                "Admin system",
+                "Back end",
+                "Front end"
+            ],
+            "awards": [],
+            "desc1": "Depuis 18 ans, Truffle Capital crée et finance jusqu’au succès, en France et en Europe, des innovations radicales et disruptives dans deux domaines d’expertise, Sciences de la Vie et Technologies de l’Information. Truffle Capital a levé plus d’1,1 milliard d’euros depuis sa création et financé 70 entreprises. La société dispose aujourd’hui d’un portefeuille de 35 sociétés pour 700 millions d’euros sous gestion. Truffle a fait appel à nos services pour la refonte de son logotype et de son site. Nous avons créé un ensemble cohérent, moderne qui replace Truffle Capital au cœur de sa mission : créer et acccompagner des sociétés qui révolutionnent leurs secteurs et deviendront les leaders de demain.",
+            "screenshotMain1": "main_scrn5.jpg",
+            "screenshotMobile": "mobile_scrn4.png",
+            "desc2": "En référence au logotype, nous avons développé une vague au mouvement perpétuel, comme un organisme vivant faisant écho à la BioTech.",
+            "screenshots1": [
+                "mini_scrn3.jpg",
+                "mini_scrn3.jpg",
+                "mini_scrn3.jpg"
+            ],
+            "screenshotMain2": "main_scrn6.jpg",
+            "screenshotSec1": "sec_scrn2.png",
+            "screenshots2": [
+                "mini_scrn3.jpg",
+                "mini_scrn3.jpg",
+                "mini_scrn3.jpg"
+            ],
+            "next": null
+        }
+    ]
+}
