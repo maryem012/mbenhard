@@ -1,5 +1,5 @@
 <div class="projectalt-page" *ngIf="project">
-  <app-headersec></app-headersec>
+  <app-headersec pageTitle="{{pagetitle}}" url="{{url}}"></app-headersec>
   <div class="level1">
     <div class="main-img" [style.background]="'url(./assets/' + project.img + ') no-repeat 150% left -150px'"></div>
     <h2>{{project.title}}</h2>

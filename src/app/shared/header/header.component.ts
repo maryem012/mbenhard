@@ -18,7 +18,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() pageTitle: string = '';
+  @Input() pageTitle: any;
   content: any;
   @Input() url: string = '';
   isOverlayVisible = false;

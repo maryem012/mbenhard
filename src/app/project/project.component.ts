@@ -9,10 +9,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProjectComponent  implements OnInit, AfterViewChecked {
   id: number=0;
-  pageTitle: string="";
+  pageTitle:any;
   project: any;
   url: any;
-
+projecttitle:any;
   constructor(private route: ActivatedRoute, private http: HttpClient) { }
 
   ngOnInit(): void {
