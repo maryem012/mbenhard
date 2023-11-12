@@ -15,11 +15,11 @@
       <a href="javascript:void(0)" class="active">&nbsp;{{content.lang2}}&nbsp;</a>
   </div>
   <nav *ngIf="content">
-      <ul>
-          <li><a class="{{pageTitle === 'Projects' ? 'active' : ''}}" routerLink="/lang/projects">{{content.projects}}</a></li>
-          <li><a class="{{pageTitle === 'The Agency' ? 'active' : ''}}" routerLink="/lang/agency">{{content.agency}}</a></li>
-          <li><a class="{{pageTitle === 'Contact' ? 'active' : ''}}" routerLink="/lang/contact">{{content.contact}}</a></li>
-      </ul>
+    <ul>
+      <li><a routerLink="/lang/projects" routerLinkActive="active">{{content.projects}}</a></li>
+      <li><a routerLink="/lang/agency" routerLinkActive="active">{{content.agency}}</a></li>
+      <li><a routerLink="/lang/contact" routerLinkActive="active">{{content.contact}}</a></li>
+    </ul>
   </nav>
   <div class="btn-menu" *ngIf="content">
       <a href="javascript:void(0)" >{{content.menu}}<br />{{content.close}}</a>
