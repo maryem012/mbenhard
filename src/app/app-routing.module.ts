@@ -17,18 +17,18 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ProjectSecComponent } from './sec/project-sec/project-sec.component';
 
 const routes: Routes = [   {path: '', component: HomeComponent},
-{path: 'projects', component: ProjectsComponent},
+{path: 'projects', component: ProjectsComponent, data: { animation: 'projects' }},
 {path: 'foot', component: FooterComponent},
 
-{path: 'contact', component: ContactComponent},
-{path: 'agency', component: AgencyComponent},
+{path: 'contact', component: ContactComponent, data: { animation: 'contact'}},
+{path: 'agency', component: AgencyComponent, data: { animation: 'agency' }},
 {path: 'project/:id', component: ProjectComponent},
 {path: 'projectalt/:id', component: ProjectAltComponent},
 {path: 'lang', component: HomeSecComponent},
-{path: 'lang/agency', component: AgencySecComponent},
-{path: 'lang/contact', component: ContactsecComponent},
+{path: 'lang/agency', component: AgencySecComponent, data: { animation: 'agency' }},
+{path: 'lang/contact', component: ContactsecComponent, data: { animation: 'contact'}},
 {path: 'lang/projects', component: ProjectsSecComponent},
-{path: 'lang/project/:id', component: ProjectSecComponent},
+{path: 'lang/project/:id', component: ProjectSecComponent, data: { animation: 'projects' }},
 {path: 'lang/projectalt/:id', component: ProjectAltSecComponent}
 ];
 
