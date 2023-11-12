@@ -2,10 +2,12 @@
   <div class="back"></div>
 
   <div class="logo" *ngIf="pageTitle === 'home' && content">
-      {{content.title}}
-  </div>
+
+    <img src="./assets/logo-dark.svg" alt="" class="logo" />
+    &nbsp;&nbsp;&mdash;&nbsp;&nbsp;{{content.title}}
+    </div>
   <div class="logo" *ngIf="pageTitle !== 'home' && content">
-      <img routerLink="/lang" (mouseenter)="logoAnim()" (mouseleave)="logoAnim()" src="./assets/logo-dark.svg" alt="" />
+      <img routerLink="/lang"  src="./assets/logo-dark.svg" alt="" />
       <div class="page-title">&nbsp;&nbsp;&mdash;&nbsp;&nbsp;{{pageTitle}}<br />&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Home</div>
   </div>
   <div class="lang" *ngIf="content">

@@ -1,38 +1,41 @@
 <div class="agency-page" *ngIf="content">
-  <app-headersec pageTitle="{{pageTitle}}" url="lang/agency"></app-headersec>
+  <app-headersec pageTitle="{{pageTitle}}" url="/agency"></app-headersec>
   <div class="level1">
-    <img class="logo" src="./assets/logo-light.svg" alt="" />
-    <h2>{{content.title}}</h2>
+      <img class="logo" src="./assets/logo-light.svg" alt="" />
+      <h2>{{content.title}}</h2>
   </div>
   <div class="level2">
-    <img class="neck" [src]="'./assets/' + content.mainImg" alt="" />
-    <p>{{content.desc1}}</p>
+      <img class="neck" src="./assets/{{content.mainImg}}" alt="" />
+      <p>
+          {{content.desc1}}
+      </p>
   </div>
   <div class="level3">
-    <div class="item">
-      <h6>{{content.skills.title}}</h6>
-      <div class="service-item" *ngFor="let s of content.skills.skills">{{s}}</div>
-    </div>
-    <div class="item">
-      <h6>{{content.passion.title}}</h6>
-      <p class="mission">{{content.passion.desc}}</p>
-      <br />
-    </div>
+      <div class="item">
+          <h6>{{content.skills.title}}</h6>
+          <div class="service-item" *ngFor="let s of content.skills.skills">{{s}}</div>
+      </div>
+      <div class="item">
+          <h6>{{content.passion.title}}</h6>
+          <p class="mission">
+              {{content.passion.desc}}
+          </p>
+          <br />
+      </div>
   </div>
   <div class="level4">
-    <img [src]="'./assets/' + content.lines" alt="" />
-    <p [class.active]="isParagraphActive">{{content.desc2}}</p>  </div>
+      <img src="./assets/{{content.lines}}" alt="" />
+      <p (click)="setActive()" >{{content.desc2}}</p>
+  </div>
   <div class="level5">
-    <p>{{content.desc3}}</p>
+      <p>{{content.desc3}}</p>
   </div>
-
   <div class="level6">
-    <div>
-      <h6>{{content.origin.title}}</h6>
-      <p>{{content.origin.desc}}</p>
-    </div>
+      <div>
+          <h6>{{content.origin.title}}</h6>
+          <p>{{content.origin.desc}}</p>
+      </div>
   </div>
-
   <div class="level7">
       <h6>Core Team</h6>
       <div>
@@ -51,12 +54,12 @@
 </div>
 <div class="overlay-mobi dark">
   <div class="lang">
-    <a routerLink="/agency">&nbsp;En&nbsp;</a>
+    <a routerLink={{url}}>&nbsp;En&nbsp;</a>
     <a href="javascript:void(0)" class="active">&nbsp;Fr&nbsp;</a>
   </div>
   <nav>
     <ul>
-      <li><a routerLink="/lang/projects">Projets</a></li>
+      <li><a routerLink="/lang/projects">Projects</a></li>
       <li><a routerLink="/lang/agency">L'Agence</a></li>
       <li><a routerLink="/lang/contact">Contact</a></li>
     </ul>

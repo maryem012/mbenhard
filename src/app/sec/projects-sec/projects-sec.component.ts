@@ -10,7 +10,7 @@ import { ContentSecService } from 'src/app/services/content-sec.service';
 })
 export class ProjectsSecComponent implements OnInit, AfterViewChecked {
   id: any;
-  pageTitle: string = "home";
+  pageTitle: string = "Projets";
   project: any;
   url: any;
   projects: any;

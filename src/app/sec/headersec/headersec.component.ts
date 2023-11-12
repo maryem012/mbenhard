@@ -8,7 +8,6 @@ import { ContentSecService } from 'src/app/services/content-sec.service';
   styleUrls: ['./headersec.component.scss']
 })
 export class HeadersecComponent implements OnInit {
-
   @Input() pageTitle: string="home";
   content: any;
   @Input() url: string | undefined;

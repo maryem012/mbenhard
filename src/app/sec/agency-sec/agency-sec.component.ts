@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit, AfterViewChecked } from '@angular/core';
+import { Component, OnInit, AfterViewChecked, Input } from '@angular/core';
 
 @Component({
   selector: 'app-agency-sec',
@@ -9,6 +9,8 @@ import { Component, OnInit, AfterViewChecked } from '@angular/core';
 export class AgencySecComponent implements OnInit, AfterViewChecked {
   pageTitle: string = 'L\'Agence';
   content: any;
+  @Input() url: string | undefined;
+
   isOverlayVisible = true;
   isParagraphActive = false; // Add variable for paragraph class
   isCircleVisible = false; // Add variable for circle visibility
@@ -18,7 +20,6 @@ export class AgencySecComponent implements OnInit, AfterViewChecked {
     this.scrollToTop();
     this.http.get("./assets/json/datasec.json").subscribe((data: any) => {
       this.content = data.agency;
-      this.setAgencyHeaderClass(true);
       this.addScrollListener();
     });
     this.hideMobileOverlay();
@@ -31,14 +32,13 @@ export class AgencySecComponent implements OnInit, AfterViewChecked {
   setActive(): void {
     this.toggleActiveClass('.agency-page .level4 p');
     this.toggleActiveClass('.agency-page .level4 img');
+
   }
 
   private scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  private setAgencyHeaderClass(isDark: boolean) {
-  }
 
   private hideMobileOverlay() {
   }
@@ -57,4 +57,5 @@ export class AgencySecComponent implements OnInit, AfterViewChecked {
 
   private handleScroll() {
   }
+
 }

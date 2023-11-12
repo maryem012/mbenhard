@@ -58,9 +58,10 @@
 </div>
 <div class="overlay-mobi dark">
   <div class="lang">
-    <a href="javascript:void(0)" class="active">&nbsp;En&nbsp;</a>
-    <a routerLink="{{url}}">&nbsp;Fr&nbsp;</a>
+    <a [routerLink]="'lang/projectalt/{{project.next.id}}'">&nbsp;Fr&nbsp;</a>
+    <a href="javascript:void(0)" [routerLink]="url" class="active">&nbsp;En&nbsp;</a>
   </div>
+
   <nav>
     <ul>
       <li><a routerLink="/projects">Projects</a></li>
@@ -69,3 +70,4 @@
     </ul>
   </nav>
 </div>
+

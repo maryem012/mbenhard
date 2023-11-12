@@ -3,15 +3,15 @@
   <div class="logo" *ngIf="pageTitle === 'home' && content">
 
   <img src="./assets/logo-dark.svg" alt="" class="logo" />
-      {{content.title}}
+  &nbsp;&nbsp;&mdash;&nbsp;&nbsp;{{content.title}}
   </div>
   <div class="logo" *ngIf="pageTitle !== 'home' && content">
-      <img routerLink="/" (mouseenter)="logoAnim()" (mouseleave)="logoAnim()" src="./assets/json/logo-dark.svg" alt="" />
+      <img routerLink="/"  src="./assets/logo-dark.svg" alt="" class="logo"  />
       <div class="page-title">&nbsp;&nbsp;&mdash;&nbsp;&nbsp;{{pageTitle}}<br />&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Home</div>
   </div>
   <div class="lang" *ngIf="content">
-      <a href="javascript:void(0)" class="active">&nbsp;{{content.lang1}}&nbsp;</a>
-      <a routerLink="{{url}}">&nbsp;{{content.lang2}}&nbsp;</a>
+      <a href="javascript:void(0)" class="active">&nbsp;En&nbsp;</a>
+      <a routerLink="{{url}}">&nbsp;Fr&nbsp;</a>
   </div>
   <nav *ngIf="content">
       <ul>
