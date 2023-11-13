@@ -17,6 +17,7 @@ export class HeadersecComponent implements OnInit {
 
   ngOnInit(): void {
 this.getContent()
+
   }
 
   changeLang(lang: string): void {
