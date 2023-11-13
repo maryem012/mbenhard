@@ -28,6 +28,10 @@ this.getContent()
 
   toggleMobi(): void {
     this.isOverlayVisible = !this.isOverlayVisible;
+    console.log("Menu Visibility Toggled:", this.isOverlayVisible); // Add this for debugging
+  }
+  isMobile(): boolean {
+    return window.innerWidth <= 768; // Adjust the breakpoint as needed
   }
   getContent(){
     this.contentService.getContent().subscribe((data: any) => {
