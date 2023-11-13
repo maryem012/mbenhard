@@ -3510,76 +3510,69 @@ body{
                 }
             }
 
-            .overlay-mobi{
-                display:block;
-                width:100%;
-                height:100vh;
-                position:fixed;
-                top:0;
-                left:0;
-                padding:15vh 10%;
-                background:#FFF;
-                z-index:200;
+            .overlay-mobi {
+              width: 100%;
+              height: 100vh;
+              position: fixed;
+              top: 0;
+              left: 0;
+              padding: 15vh 10%;
+              background: #FFF;
+              z-index: 200;
+              display: none; // Initially hidden
 
-                &.dark{
-                    color:#FFF;
-                    background:#000;
-                }
+              // Toggle visibility based on isOverlayVisible
+              &.visible {
+                  display: block;
+              }
 
-                .lang{
-                    font-size:.75rem;
+              &.dark {
+                  color: #FFF;
+                  background: #000;
+              }
 
-                    a{
-                        margin:0 10px 0 0;
+              .lang {
+                  font-size: .75rem;
 
-                        &.active{
-                            border-bottom:1px solid currentColor;
-                        }
-                    }
-                }
+                  a {
+                      margin: 0 10px 0 0;
 
-                nav{
-                    ul{
-                        list-style:none;
-                        margin:50px 0 0 0;
+                      &.active {
+                          border-bottom: 1px solid currentColor;
+                      }
+                  }
+              }
 
-                        li{
-                          list-style:none;
+              nav {
+                  ul {
+                      list-style: none;
+                      margin: 50px 0 0;
 
-                            position:relative;
-                            top:30px;
-                            font-size:40px;
-                            font-family:Rz;
-                            line-height:1.618;
-                            opacity:0;
+                      li {
+                          list-style: none;
+                          position: relative;
+                          top: 30px;
+                          font-size: 40px;
+                          font-family: Rz;
+                          line-height: 1.618;
+                          opacity: 0;
 
-                            &:first-of-type{
-                                animation-name:overlay-anim;
-                                animation-duration:.6s;
-                                animation-fill-mode:ease;
-                                animation-fill-mode:forwards;
-                                animation-delay:.1s;
-                            }
+                          &:first-of-type {
+                              animation: overlay-anim .6s ease forwards .1s;
+                          }
 
-                            &:nth-of-type(2){
-                                animation-name:overlay-anim;
-                                animation-duration:.6s;
-                                animation-fill-mode:ease;
-                                animation-fill-mode:forwards;
-                                animation-delay:.3s;
-                            }
+                          &:nth-of-type(2) {
+                              animation: overlay-anim .6s ease forwards .3s;
+                          }
 
-                            &:last-of-type{
-                                animation-name:overlay-anim;
-                                animation-duration:.6s;
-                                animation-fill-mode:ease;
-                                animation-fill-mode:forwards;
-                                animation-delay:.5s;
-                            }
-                        }
-                    }
-                }
-            }
+                          &:last-of-type {
+                              animation: overlay-anim .6s ease forwards .5s;
+                          }
+                      }
+                  }
+              }
+          }
+
         }
     }
 }

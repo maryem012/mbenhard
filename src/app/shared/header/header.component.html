@@ -19,11 +19,11 @@
       <li><a class="{{pageTitle === 'Contact' ? 'active' : ''}}" routerLink="/contact">{{content.contact}}</a></li>
     </ul>
   </nav>
-  <div class="btn-menu"  (click)="toggleMobi()">
+  <div class="btn-menu" *ngIf="content" (click)="toggleMobi()">
     <span class="hamburger-icon">
       &#9776; <!-- Commonly used character for hamburger menu -->
     </span>  </div>
-    <div class="overlay-mobi" *ngIf="isOverlayVisible">
+    <div class="overlay-mobi" [class.visible]="isOverlayVisible" *ngIf="isOverlayVisible">
       <ul class="mobile-menu-list">
       <li><a routerLink="/home">Home</a></li>
       <li><a routerLink="/projects">Projects</a></li>
