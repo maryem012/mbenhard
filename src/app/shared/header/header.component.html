@@ -20,17 +20,28 @@
     </ul>
   </nav>
   <div class="btn-menu" *ngIf="content" (click)="toggleMobi()">
-    <span class="hamburger-icon">
-      &#9776; <!-- Commonly used character for hamburger menu -->
-    </span>  </div>
-    <div class="overlay-mobi" [class.visible]="isOverlayVisible" *ngIf="isOverlayVisible">
-      <ul class="mobile-menu-list">
-      <li><a routerLink="/">Home</a></li>
-      <li><a routerLink="/projects">Projects</a></li>
-      <li><a routerLink="/agency">The Agency</a></li>
-      <li><a routerLink="/contact">Contact</a></li>
-        <a href="javascript:void(0)" class="active">&nbsp;En&nbsp;</a>
-        <a routerLink="{{url}}">&nbsp;Fr&nbsp;</a>
-      </ul>
+    <span> {{ content.menu }}<br /> </span>
+  </div>
+
+  <div
+    class="overlay-mobi"
+    [class.visible]="isOverlayVisible"
+    *ngIf="isOverlayVisible"
+  >
+
+  <a   href="javascript:void(0)" style="text-decoration: underline;">&nbsp;En&nbsp;</a>
+  <a routerLink="{{ url }}" class="active" >&nbsp;Fr&nbsp;</a>
+    <div style="float: right">
+      <span   *ngIf="isOverlayVisible" (click)="toggleMobi()">
+        &#10006; {{ content.close }}
+      </span>
     </div>
+    <br />
+    <ul class="mobile-menu-list" style="margin-top: 60px;">
+      <li style="padding: 19px;list-style: none; font-weight: bolder;font-size: xx-large;"><a routerLink="/lang">Home</a></li>
+      <li style="padding: 19px;font-size: larger;list-style: none;font-weight: bolder;font-size: xx-large;"><a routerLink="/projects">Projects</a></li>
+      <li style="padding: 19px;font-size: larger;list-style: none;font-weight: bolder;font-size: xx-large;"><a routerLink="/agency">The Agency</a></li>
+      <li style="padding: 19px;font-size: larger;list-style: none;font-weight: bolder;font-size: xx-large;"><a routerLink="/contact">Contact</a></li>
+    </ul>
+  </div>
 </header>

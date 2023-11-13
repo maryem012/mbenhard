@@ -2,37 +2,64 @@
   <div class="back"></div>
 
   <div class="logo" *ngIf="pageTitle === 'home' && content">
-
     <img src="./assets/logo-dark.svg" alt="" class="logo" />
-    &nbsp;&nbsp;&mdash;&nbsp;&nbsp;{{content.title}}
-    </div>
+    &nbsp;&nbsp;&mdash;&nbsp;&nbsp;{{ content.title }}
+  </div>
   <div class="logo" *ngIf="pageTitle !== 'home' && content">
-      <img routerLink="/lang/"  src="./assets/logo-dark.svg" alt="" />
-      <div class="page-title">&nbsp;&nbsp;&mdash;&nbsp;&nbsp;{{pageTitle}}<br />&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Home</div>
+    <img routerLink="/lang/" src="./assets/logo-dark.svg" alt="" />
+    <div class="page-title">
+      &nbsp;&nbsp;&mdash;&nbsp;&nbsp;{{ pageTitle
+      }}<br />&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Home
+    </div>
   </div>
   <div class="lang" *ngIf="content">
-      <a routerLink="{{url}}">&nbsp;{{content.lang1}}&nbsp;</a>
-      <a href="javascript:void(0)" class="active">&nbsp;{{content.lang2}}&nbsp;</a>
+    <a routerLink="{{ url }}">&nbsp;{{ content.lang1 }}&nbsp;</a>
+    <a href="javascript:void(0)" class="active"
+      >&nbsp;{{ content.lang2 }}&nbsp;</a
+    >
   </div>
   <nav [class.visible]="isOverlayVisible" *ngIf="content">
     <ul>
-      <li><a routerLink="/lang/projects" routerLinkActive="active">{{content.projects}}</a></li>
-      <li><a routerLink="/lang/agency" routerLinkActive="active">{{content.agency}}</a></li>
-      <li><a routerLink="/lang/contact" routerLinkActive="active">{{content.contact}}</a></li>
+      <li>
+        <a routerLink="/lang/projects" routerLinkActive="active">{{
+          content.projects
+        }}</a>
+      </li>
+      <li>
+        <a routerLink="/lang/agency" routerLinkActive="active">{{
+          content.agency
+        }}</a>
+      </li>
+      <li>
+        <a routerLink="/lang/contact" routerLinkActive="active">{{
+          content.contact
+        }}</a>
+      </li>
     </ul>
   </nav>
   <div class="btn-menu" *ngIf="content" (click)="toggleMobi()">
-    <span class="hamburger-icon">
-      &#9776; <!-- Commonly used character for hamburger menu -->
-    </span>  </div>
-    <div class="overlay-mobi" [class.visible]="isOverlayVisible" *ngIf="isOverlayVisible">
-      <ul class="mobile-menu-list">
-      <li><a routerLink="/lang">Accueil</a></li>
-      <li><a routerLink="/lang/projects">Projets</a></li>
-      <li><a routerLink="/lang/agency">l'agence</a></li>
-      <li><a routerLink="/lang/contact">Contact</a></li>
-        <a   routerLink="{{url}}">&nbsp;En&nbsp;</a>
-        <a href="javascript:void(0)"  class="active">&nbsp;Fr&nbsp;</a>
-      </ul>
+    <span> {{ content.menu }}<br /> </span>
+  </div>
+
+  <div
+    class="overlay-mobi"
+    [class.visible]="isOverlayVisible"
+    *ngIf="isOverlayVisible"
+  >
+
+  <a routerLink="{{ url }}">&nbsp;En&nbsp;</a>
+  <a href="javascript:void(0)" class="active" style="text-decoration: underline;">&nbsp;Fr&nbsp;</a>
+    <div style="float: right">
+      <span   *ngIf="isOverlayVisible" (click)="toggleMobi()">
+        &#10006; {{ content.close }}
+      </span>
     </div>
+    <br />
+    <ul class="mobile-menu-list" style="margin-top: 60px;">
+      <li style="padding: 19px;list-style: none; font-weight: bolder;font-size: xx-large;"><a routerLink="/lang">Accueil</a></li>
+      <li style="padding: 19px;font-size: larger;list-style: none;font-weight: bolder;font-size: xx-large;"><a routerLink="/lang/projects">Projets</a></li>
+      <li style="padding: 19px;font-size: larger;list-style: none;font-weight: bolder;font-size: xx-large;"><a routerLink="/lang/agency">L'agence</a></li>
+      <li style="padding: 19px;font-size: larger;list-style: none;font-weight: bolder;font-size: xx-large;"><a routerLink="/lang/contact">Contact</a></li>
+    </ul>
+  </div>
 </header>

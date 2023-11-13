@@ -3521,13 +3521,21 @@ body{
               height: 100vh;
               position: fixed;
               top: 0;
+              color: #FFF;
               left: 0;
               padding: 10vh 5%; // Adjusted padding for more space
-              background: #FFF;
+              background: #0a0a0a;
               z-index: 200;
               display: none; // Initially hidden
               transition: all 0.3s ease-in-out; // Smooth transition for the overlay
-
+font-size: larger;
+    pointer-events: auto;
+    opacity: 1;
+    font-family: "rz-regular","rz-regular",Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    padding: 40px;
+    margin: 0;
+    text-rendering: optimizeLegibility;
               &.visible {
                   display: block;
 
@@ -3582,8 +3590,14 @@ body{
                       }
                   }
               }
-          }
 
+
+          }
+          .close-icon {
+            cursor: pointer;
+            font-size: 24px; /* Adjust the size as needed */
+            margin-left: 10px; /* Adjust the margin as needed */
+          }
           // Keyframes for overlay-anim (ensure these are defined)
           @keyframes overlay-anim {
               from { opacity: 0; transform: translateY(-20px); }
