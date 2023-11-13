@@ -190,6 +190,52 @@ body{
                 height:5.25rem;
             }
         }
+        @media screen and (max-width: 768px) {
+          .btn-menu {
+              display: block;
+              cursor: pointer;
+
+              // other styling for mobile view
+          }
+          nav {
+              display: none;
+          }
+      }
+      .overlay-mobi {
+
+          display: none; // Hidden by default
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: red; // Bright color for visibility
+          z-index: 1000; // High z-index to ensure it's on top
+        
+
+        .mobile-menu-list {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          // Additional styling...
+
+          li {
+            padding: 1rem; // Example padding
+            border-bottom: 1px solid #ffffff; // Example styling
+
+            a {
+              color: white;
+              text-decoration: none;
+              display: block;
+              // Additional link styling...
+            }
+
+            // Additional li item styling...
+          }
+        }
+      }
+
+      // Additional CSS/SCSS styles...
 
         main{
             display:block;

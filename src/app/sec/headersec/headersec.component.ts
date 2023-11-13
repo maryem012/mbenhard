@@ -12,7 +12,7 @@ export class HeadersecComponent implements OnInit {
   content: any;
   @Input() url: string | undefined;
   selectedLang: string = ''; // Add a selectedLang property to track the active language
-
+  isOverlayVisible=false;
   constructor(private http: HttpClient, private contentService:ContentSecService) { }
 
   ngOnInit(): void {
@@ -27,7 +27,7 @@ this.getContent()
   }
 
   toggleMobi(): void {
-
+    this.isOverlayVisible = !this.isOverlayVisible;
   }
   getContent(){
     this.contentService.getContent().subscribe((data: any) => {

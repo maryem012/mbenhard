@@ -16,7 +16,7 @@ import { ProjectAltSecComponent } from './sec/project-alt-sec/project-alt-sec.co
 import { FooterComponent } from './shared/footer/footer.component';
 import { ProjectSecComponent } from './sec/project-sec/project-sec.component';
 
-const routes: Routes = [   {path: '', component: HomeComponent},
+const routes: Routes = [   {path: '', component: HomeComponent, data: { animation: 'agency' }},
 {path: 'projects', component: ProjectsComponent, data: { animation: 'projects' }},
 {path: 'foot', component: FooterComponent},
 
