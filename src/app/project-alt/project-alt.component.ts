@@ -22,7 +22,7 @@ export class ProjectAltComponent implements OnInit {
     this.route.paramMap.subscribe((params) => {
       const idParam = params.get('id');
       this.id = idParam ? parseInt(idParam) : 0;
-      this.url = '/projectalt/' + this.id;
+      this.url = '/lang/projectalt/' + this.id;
 
       this.http.get('./assets/json/dataen.json').subscribe((data: any) => {
         this.project = data.projects.find((p: { id: number }) => p.id === this.id);
@@ -35,7 +35,7 @@ export class ProjectAltComponent implements OnInit {
 
   @HostListener('window:scroll', [])
   onScroll() {
-   
+
   }
 
   toggleOverlay(): void {
