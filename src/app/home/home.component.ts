@@ -8,7 +8,7 @@ import { ContentMainService } from '../services/content-main.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit, AfterViewChecked {
-
+  isOverlayVisible = false;
   pageTitle: string = 'home';
   content: any;
   contentHome: any;
@@ -62,5 +62,8 @@ this.getContent();
     this.renderer.listen(socialItems[0], 'mouseleave', () => {
       this.renderer.setStyle(socialDot, 'display', 'none');
     });
+  }
+  isMobile(): boolean {
+    return window.innerWidth <= 768; // Adjust the breakpoint as needed
   }
 }

@@ -3516,14 +3516,15 @@ body{
               position: fixed;
               top: 0;
               left: 0;
-              padding: 15vh 10%;
+              padding: 10vh 5%; // Adjusted padding for more space
               background: #FFF;
               z-index: 200;
               display: none; // Initially hidden
+              transition: all 0.3s ease-in-out; // Smooth transition for the overlay
 
-              // Toggle visibility based on isOverlayVisible
               &.visible {
                   display: block;
+
               }
 
               &.dark {
@@ -3532,13 +3533,15 @@ body{
               }
 
               .lang {
-                  font-size: .75rem;
+                  font-size: 1rem; // Increased font size for better readability
+                  margin-bottom: 20px; // Added space below the language selector
 
                   a {
-                      margin: 0 10px 0 0;
+                      margin: 0 15px 0 0; // Adjusted margin for spacing
+                      padding: 5px; // Padding for better touch target
 
                       &.active {
-                          border-bottom: 1px solid currentColor;
+                          border-bottom: 2px solid currentColor; // Enhanced active indicator
                       }
                   }
               }
@@ -3546,36 +3549,50 @@ body{
               nav {
                   ul {
                       list-style: none;
-                      margin: 50px 0 0;
+                      margin: 30px 0 0; // Adjusted top margin
 
                       li {
-                          list-style: none;
                           position: relative;
-                          top: 30px;
-                          font-size: 40px;
-                          font-family: Rz;
-                          line-height: 1.618;
+                          font-size: 35px; // Adjusted for better balance
+                          font-family: 'Arial', sans-serif; // Example font
+                          line-height: 2.5; // Adjusted line height
                           opacity: 0;
+                          margin-bottom: 15px; // Space between menu items
+                          padding: 30px;
 
                           &:first-of-type {
-                              animation: overlay-anim .6s ease forwards .1s;
+                              animation: overlay-anim 0.6s ease forwards 0.1s;
                           }
 
                           &:nth-of-type(2) {
-                              animation: overlay-anim .6s ease forwards .3s;
+                              animation: overlay-anim 0.6s ease forwards 0.3s;
                           }
 
                           &:last-of-type {
-                              animation: overlay-anim .6s ease forwards .5s;
+                              animation: overlay-anim 0.6s ease forwards 0.5s;
                           }
                       }
                   }
               }
           }
 
-        }
-    }
-}
+          // Keyframes for overlay-anim (ensure these are defined)
+          @keyframes overlay-anim {
+              from { opacity: 0; transform: translateY(-20px); }
+              to { opacity: 1; transform: translateY(0); }
+          }
+
+          // Responsive adjustments for smaller devices
+          @media (max-width: 480px) {
+              .overlay-mobi {
+                  padding: 10vh 3%; // Reduced padding for smaller screens
+
+                  nav ul li {
+                      font-size: 28px; // Smaller font size for smaller screens
+                  }
+              }
+          }
+        }}}
 
 @keyframes header-anim {
     100%{
