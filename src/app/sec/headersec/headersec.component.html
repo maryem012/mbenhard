@@ -27,12 +27,12 @@
     </span>  </div>
     <div class="overlay-mobi" [class.visible]="isOverlayVisible" *ngIf="isOverlayVisible">
       <ul class="mobile-menu-list">
-      <li><a routerLink="/home">Home</a></li>
-      <li><a routerLink="/projects">Projects</a></li>
-      <li><a routerLink="/agency">The Agency</a></li>
-      <li><a routerLink="/contact">Contact</a></li>
-        <a href="javascript:void(0)" class="active">&nbsp;En&nbsp;</a>
-        <a routerLink="{{url}}">&nbsp;Fr&nbsp;</a>
+      <li><a routerLink="/lang">Home</a></li>
+      <li><a routerLink="/lang/projects">Projects</a></li>
+      <li><a routerLink="/lang/agency">The Agency</a></li>
+      <li><a routerLink="/lang/contact">Contact</a></li>
+        <a  class="active" routerLink="{{url}}">&nbsp;En&nbsp;</a>
+        <a href="javascript:void(0)"  class="active">&nbsp;Fr&nbsp;</a>
       </ul>
     </div>
 </header>
